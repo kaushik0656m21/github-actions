@@ -8,8 +8,8 @@ on:
 
 env:
   cloud: Google-Cloud
-  Greeting: Hello
-  First-Name: kaushik
+  Greeting: Hello!
+  Name: kaushik
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -19,4 +19,4 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: print variables 
-        run: echo " $Greeting $First-Name is using $cloud" 
+        run: echo " $Greeting $Name is using $cloud" 
